@@ -161,7 +161,7 @@ namespace System.Text.Json
 
                         if (state.ReferenceId != null)
                         {
-                            ThrowHelper.ThrowNotSupportedException_ObjectWithParameterizedCtorRefMetadataNotSupported(s_refPropertyName, ref reader, ref state);
+                            ThrowHelper.ThrowNotSupportedException_ObjectWithParameterizedCtorRefMetadataNotSupported(s_idPropertyName, ref reader, ref state);
                         }
 
                         state.ReferenceId = reader.GetString();
@@ -308,7 +308,7 @@ namespace System.Text.Json
                     {
                         if (state.ReferenceId != null)
                         {
-                            ThrowHelper.ThrowNotSupportedException_ObjectWithParameterizedCtorRefMetadataNotSupported(s_refPropertyName, ref reader, ref state);
+                            ThrowHelper.ThrowNotSupportedException_ObjectWithParameterizedCtorRefMetadataNotSupported(s_idPropertyName, ref reader, ref state);
                         }
 
                         if (property.Value.ValueKind != JsonValueKind.String)
